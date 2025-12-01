@@ -22,5 +22,5 @@ from post import views as ps
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',ps.home),
-    path("details",ps.details)
+    path("details/<str : post_id >",ps.details)
 ]

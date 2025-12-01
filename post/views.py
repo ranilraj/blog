@@ -8,5 +8,5 @@ def home(request):
     posts=Post.objects.all()
     return render(request,"index.html",context={"post":posts})
  
-def details(request):
+def details(request,postid):
     return render(request,"details.html")
